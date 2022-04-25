@@ -1,9 +1,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include "acesso.h"
+#include "gerador.h"
 
 void ler_arquivo(){
-    FILE *arquivo = fopen("arquivo_gerado.bin", "rb");
+   FILE *arquivo = fopen("arquivo_gerado.bin", "rb");
     Registro item;
 
     //verificação de abertura do arquivo
@@ -11,13 +12,12 @@ void ler_arquivo(){
         printf("\nERRO AO ABRIR O ARQUIVO\n\n");
         return;
     }
-
-    //leitura do arquivo
-    while(fread(&item, sizeof(item), 1, arquivo) == 1){
-        printf("chave: %d\n", item.chave);
-        printf("Dado 01: %ld\n", item.dado01);
-        printf("Dado 02: %s\n\n", item.dado02);
-    }
+        // //leitura do arquivo
+    // while(fread(&item, sizeof(item), 1, arquivo) == 1){
+    //     printf("chave: %d\n", item.chave);
+    //     printf("Dado 01: %ld\n", item.dado01);
+    //     printf("Dado 02: %s\n\n", item.dado02);
+    // }
 
     fclose(arquivo);
 }

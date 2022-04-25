@@ -1,5 +1,5 @@
-#ifndef PE_GERADORARQUIVO_H
-#define PE_GERADORARQUIVO_H
+#ifndef PE_ACESSOSEQUENCIAL_H
+#define PE_ACESSOSEQUENCIAL_H
 
 void gerador_arquivo(int);
 void ler_arquivo(FILE*);
