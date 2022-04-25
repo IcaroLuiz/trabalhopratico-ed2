@@ -117,7 +117,7 @@ void acesso_sequencial(int situacao, int chave, int quantidade){
         printf("\nERRO AO ABRIR O ARQUIVO.");
         return;
     }
-    posicao = preprocessamento(tabela, arquivo, quantidade, &transferencia, &tempo);
+    posicao = preprocessamento(arquivo, tabela, quantidade, &transferencia, &tempo);
     resultado = pesquisa_as(arquivo, &x, tabela, posicao, &comparacoes, &transferencia, &tempo); 
 
     if (resultado){
